@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 main {
   margin: 0 24px;
 }
@@ -7,7 +9,7 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
-  font-family: "GandhiSansRegular";
+  font-family: $font-normal;
 
   &__imagem {
     width: 88%;
@@ -21,8 +23,8 @@ main {
     h1 {
       position: absolute;
       z-index: 1;
-      color: #d9d9d9;
-      font-family: "GandhiSansBold";
+      color: $grey-light;
+      font-family: $font-bold;
       font-size: 2.5rem;
       width: 401px;
       height: 144px;
