@@ -9,6 +9,7 @@ body {
 }
 
 // Custom Scroll
+
 body::-webkit-scrollbar {
   width: 3px;
 }
@@ -20,4 +21,24 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #154580;
   border-radius: 20px;
+}
+
+// Custom Fotns 
+
+@font-face {
+  font-family: "GandhiSansRegular";
+  src: local("GandhiSansRegular"),
+    url("../assets/fonts/GandhiSans-Regular.otf")
+    format("truetype");
+  font-weight: 500;
+  display: swap;
+}
+
+@font-face {
+  font-family: "GandhiSansBold";
+  src: local("GandhiSansBold"),
+    url("../assets/fonts/GandhiSans-Bold.otf")
+    format("truetype");
+  font-weight: 700;
+  display: swap;
 }
