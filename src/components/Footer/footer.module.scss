@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+  position: fixed;
+  bottom: 0;
+
+  background-color: $blue-primary-dark;
+  font-family: $font-normal;
+
+  &__social {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+
+  p {
+    color: $cor-text;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

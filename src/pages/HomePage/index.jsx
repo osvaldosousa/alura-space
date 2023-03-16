@@ -3,6 +3,7 @@ import banner from './banner.png'
 
 import Header from "../../components/Header"
 import Menu from "../../components/Menu"
+import Footer from '../../components/Footer'
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
           </div>
         </section>
       </main>
+      <Footer/>
     </>
   )
 }
