@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
     url("../assets/fonts/GandhiSans-Regular.otf")
     format("truetype");
   font-weight: 500;
-  display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -41,5 +41,5 @@ body::-webkit-scrollbar-thumb {
     url("../assets/fonts/GandhiSans-Bold.otf")
     format("truetype");
   font-weight: 700;
-  display: swap;
+  font-display: swap;
 }
