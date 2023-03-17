@@ -1,17 +1,32 @@
 import styles from './gallery.module.scss'
 import images from './images.json'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Tags from '../Tags'
 import Cards from './Cards'
 
 function Gallery() {
+  const [itens, setItens] = useState(images);
+  const tagsName = [...new Set(images.map(image => image.tag))];
+
+  function filterImagesTags(tag = images) {
+    const filteredImages = images.filter(image => {
+      return image.tag === tag
+    })
+
+    setItens(filteredImages)
+  }
+
   return (
     <section className={styles.gallery}>
       <h2>Navegue pela Galería</h2>
-      <Tags/>
+      <Tags 
+        tags={tagsName}
+        filterImages={filterImagesTags}
+        setItens={setItens}
+      />
       <Cards 
-        images={images}
+        images={itens}
         styles={styles}
       />
     </section>
