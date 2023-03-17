@@ -6,10 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
 
   position: fixed;
   bottom: 0;
+  z-index: 5;
 
   background-color: $blue-primary-dark;
   font-family: $font-normal;
