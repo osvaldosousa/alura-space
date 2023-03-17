@@ -1,11 +1,11 @@
 import styles from './homepage.module.scss'
 import banner from './banner.png'
 
-import Header from '../../components/Header'
-import Menu from '../../components/Menu'
-import Footer from '../../components/Footer'
-import Gallery from '../../components/Gallery'
-import Popularity from '../../components/Popularity'
+import Header from 'components/Header'
+import Menu from 'components/Menu'
+import Footer from 'components/Footer'
+import Gallery from 'components/Gallery'
+import Popularity from 'components/Popularity'
 
 function HomePage() {
   return (

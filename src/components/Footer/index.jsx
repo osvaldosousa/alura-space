@@ -1,6 +1,6 @@
-import facebookIcon from '../../assets/social/facebook.svg'
-import instagramIcon from '../../assets/social/instagram.svg'
-import twitterIcon from '../../assets/social/twitter.svg'
+import facebookIcon from 'assets/social/facebook.svg'
+import instagramIcon from 'assets/social/instagram.svg'
+import twitterIcon from 'assets/social/twitter.svg'
 
 import styles from './footer.module.scss'
 
