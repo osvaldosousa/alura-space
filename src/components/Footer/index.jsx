@@ -25,7 +25,7 @@ function Footer() {
         </li>
       </ul>
 
-      <p> Desenvolvido por Alura. </p>
+      <p> Desenvolvido por Osvaldo Sousa.</p>
     </footer>
   )
 }
