@@ -1,9 +1,9 @@
-import heartIcon from './favorito.png'
 import openModal from './open.png'
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
 import React from 'react'
 
-function CardItens({images, styles}) {
+function CardItens({ images, styles, likeImage }) {
   return (
     <>
       {images.map(image => {
@@ -20,7 +20,11 @@ function CardItens({images, styles}) {
             <div>
               <p>{image.creditos}</p>
               <span>
-                <img src={heartIcon} alt="icone coração para curtir imagem" />
+                {image.like ? 
+                  <AiFillHeart size={25} color="red" onClick={() => likeImage(image.id)} />
+                  :
+                  <AiOutlineHeart size={25} onClick={() => likeImage(image.id)} />
+                }
                 <img src={openModal} alt="icone de abrir modal" />
               </span>
             </div>
